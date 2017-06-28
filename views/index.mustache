@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Todo List</title>
+    <link rel="stylesheet" href="./public/main.css">
+  </head>
+  <body>
+    <form>
+      <input id="new-task" type="text" placeholder="Add a todo..."><button>Add todo...</button>
+    </form>
+    <div>
+      <h1 class="red">Incomplete Tasks</h1>
+      {{#todo}}
+      <ul id="incomplete-tasks">
+      </ul>
+      {{/todo}}
+
+    </div>
+    <div>
+      <h2 class="blue">Complete Tasks</h2>
+      {{#completed}}
+      <ul id="completed-tasks">
+      </ul>
+      {{/completed}}
+    </div>
+    <script src="./public/index.js" type="text/javascript"></script>
+  </body>
+</html>
