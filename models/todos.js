@@ -1,7 +1,7 @@
 'use strict';
 module.exports = function(sequelize, DataTypes) {
-  var toDo = sequelize.define('todo', {
-    name: DataTypes.STRING,
+  var Todos = sequelize.define('Todos', {
+    todo: DataTypes.STRING,
     completed: DataTypes.BOOLEAN
   }, {
     classMethods: {
@@ -10,5 +10,5 @@ module.exports = function(sequelize, DataTypes) {
       }
     }
   });
-  return toDo;
+  return Todos;
 };
